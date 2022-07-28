@@ -16,7 +16,20 @@
         }
         return $searched;
     }
+
+    function NewElement(string $element, array $tableau_test){
+        for($i = 0; $i = count($tableau_test); $i++){
+            if($tableau_test[$i] == 0){
+                array_push($tableau_test, $element);
+            }else{
+                echo 'tableau complet';
+            }
+        }
+        return $tableau_test;
+
+    }
     $validation = Search($tableau_test_2);
     echo $validation;
+    $ajout = NewElement('MIB', $tableau_test);
 
 ?>
